@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mô phỏng BFS Maze</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Mô phỏng tìm đường BFS trong mê cung</h2>
+  <canvas id="mazeCanvas" width="600" height="400"></canvas>
+
+  <div id="panel">
+    👉 <b>Cách sử dụng:</b> 
+    <ul>
+      <li>Nhấn <b>chuột trái</b> vào một ô trắng để chọn đích cần tìm đường.</li>
+      <li>Nhấn <b>chuột phải</b> để thêm hoặc xóa tường.</li>
+    </ul>
+
+    <div class="buttons">
+      <button id="btnStart">▶️ Bắt đầu</button>
+      <button id="btnPause">⏸️ Tạm dừng</button>
+      <button id="btnReset">🔄 Đặt lại</button>
+      <button id="btnRandom">🎲 Tạo ngẫu nhiên</button>
+    </div>
+
+    <div id="status">Trạng thái: Chờ chọn đích</div>
+    <div id="stats">Bước: 0 | Ô đã thăm: 0 | Độ dài đường đi: 0</div>
+
+    <div class="legend">
+      <div class="legend-item"><div class="box" style="background:green;"></div>Xuất phát</div>
+      <div class="legend-item"><div class="box" style="background:purple;"></div>Đích</div>
+      <div class="legend-item"><div class="box" style="background:black;"></div>Tường</div>
+      <div class="legend-item"><div class="box" style="background:lightblue;"></div>Đã thăm</div>
+      <div class="legend-item"><div class="box" style="background:red;"></div>Đang xét</div>
+      <div class="legend-item"><div class="box" style="background:yellow;"></div>Đường đi</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

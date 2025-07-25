@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(135deg,#f0f4ff,#d6e4ff);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+h2 {
+  margin-top:20px;
+  color:#222;
+}
+canvas {
+  border:3px solid #4a6cf7;
+  border-radius:8px;
+  margin-top:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  background:white;
+}
+#panel {
+  margin-top:15px;
+  background:#ffffffcc;
+  padding:15px;
+  width:650px;
+  border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+#status {
+  font-weight:bold;
+  margin-top:10px;
+  color:#333;
+}
+#stats {
+  margin-top:5px;
+  color:#333;
+}
+.buttons {
+  margin-top:15px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+button {
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+  color:white;
+}
+#btnStart {background:#28a745;}
+#btnStart:hover {background:#218838;}
+#btnReset {background:#ffc107; color:#222;}
+#btnReset:hover {background:#e0a800;}
+#btnRandom {background:#17a2b8;}
+#btnRandom:hover {background:#117a8b;}
+#btnPause {background:#dc3545;}
+#btnPause:hover {background:#bd2130;}
+.legend {
+  margin-top:15px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.legend-item {
+  display:flex;
+  align-items:center;
+  gap:4px;
+  font-size:14px;
+}
+.box {
+  width:18px; height:18px;
+  border:1px solid #333;
+  border-radius:3px;
+}
